@@ -24,8 +24,8 @@ RUN go get github.com/aws/aws-sdk-go/aws/awserr
 RUN go get github.com/nu7hatch/gouuid
 RUN go get github.com/gorilla/handlers
 
-ENV AWS_ACCESS_KEY_ID=AKIAUUSGN2DSTUQJP67K
-ENV AWS_SECRET_ACCESS_KEY=RfbjWdzpsWM85OfH9VF96p5Z+bJRZLi5Vfi7t1E6
+ENV AWS_ACCESS_KEY_ID=<your-access-key>
+ENV AWS_SECRET_ACCESS_KEY=<your-secret-key>
 
 # Build the Go app
 RUN go build -o main .
